@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.springblade.basic.mapper.StudentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="studentResultMap" type="org.springblade.basic.entity.Student">
+        <result column="id" property="id"/>
+        <result column="create_user" property="createUser"/>
+        <result column="create_dept" property="createDept"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_user" property="updateUser"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="status" property="status"/>
+        <result column="is_deleted" property="isDeleted"/>
+        <result column="name_stu" property="nameStu"/>
+        <result column="sex_stu" property="sexStu"/>
+        <result column="contact_stu" property="contactStu"/>
+        <result column="birth_stu" property="birthStu"/>
+        <result column="province_stu" property="provinceStu"/>
+        <result column="city_stu" property="cityStu"/>
+        <result column="district_stu" property="districtStu"/>
+        <result column="detail_address_stu" property="detailAddressStu"/>
+        <result column="remark_stu" property="remarkStu"/>
+    </resultMap>
+
+
+    <select id="selectStudentPage" resultMap="studentResultMap">
+        select * from basic_student where is_deleted = 0
+    </select>
+
+</mapper>

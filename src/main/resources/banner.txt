@@ -1,0 +1,12 @@
+${AnsiColor.BLUE}                   ___    ___ ___  ___  _______      ___    ___ ___  ________  ________   ________
+${AnsiColor.BLUE}                  |\  \  /  /|\  \|\  \|\  ___ \    |\  \  /  /|\  \|\   __  \|\   ___  \|\   ____\
+${AnsiColor.BLUE}                  \ \  \/  / | \  \\\  \ \   __/|   \ \  \/  / | \  \ \  \|\  \ \  \\ \  \ \  \___|
+${AnsiColor.BLUE}                   \ \    / / \ \  \\\  \ \  \_|/__  \ \    / / \ \  \ \   __  \ \  \\ \  \ \  \  ___
+${AnsiColor.BLUE}                    \/  /  /   \ \  \\\  \ \  \_|\ \  /     \/   \ \  \ \  \ \  \ \  \\ \  \ \  \|\  \
+${AnsiColor.BLUE}                  __/  / /      \ \_______\ \_______\/  /\   \    \ \__\ \__\ \__\ \__\\ \__\ \_______\
+${AnsiColor.BLUE}                 |\___/ /        \|_______|\|_______/__/ /\ __\    \|__|\|__|\|__|\|__| \|__|\|_______|
+${AnsiColor.BLUE}                 \|___|/                            |__|/ \|__|
+${AnsiColor.BLUE}
+
+${AnsiColor.RED}                 欢迎使用"yue"框架,${AnsiColor.RED}有问题请发送邮件到 chuqiu_y@163.com
+${AnsiColor.BLUE}                 yue ${blade.service.version} :: ${spring.application.name}:${AnsiColor.RED}${blade.env}${AnsiColor.BLUE} :: Running SpringBoot ${spring-boot.version} :: ${AnsiColor.BRIGHT_BLACK}

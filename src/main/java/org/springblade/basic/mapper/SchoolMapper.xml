@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.springblade.basic.mapper.SchoolMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="schoolResultMap" type="org.springblade.basic.entity.School">
+        <result column="id" property="id"/>
+        <result column="create_user" property="createUser"/>
+        <result column="create_dept" property="createDept"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_user" property="updateUser"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="status" property="status"/>
+        <result column="is_deleted" property="isDeleted"/>
+        <result column="name_school" property="nameSchool"/>
+        <result column="contact_school" property="contactSchool"/>
+        <result column="address_school" property="addressSchool"/>
+        <result column="introduce_school" property="introduceSchool"/>
+        <result column="remark_school" property="remarkSchool"/>
+    </resultMap>
+
+    <!--   真实删除 基础学校表-->
+    <delete id="deleteByIdzs">
+            delete from basic_school where id = #{id}
+    </delete>
+
+
+    <select id="selectSchoolPage" resultMap="schoolResultMap">
+        select * from basic_school where is_deleted = 0
+    </select>
+
+
+</mapper>
