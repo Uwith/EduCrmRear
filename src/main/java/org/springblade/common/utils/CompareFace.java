@@ -18,7 +18,6 @@ public class CompareFace {
 
     //创建 CompareFace 的一个对象
     private static CompareFace compareFace = new CompareFace();
-
     private boolean results;
 
     public void setResults(boolean results) {
@@ -30,7 +29,7 @@ public class CompareFace {
     }
 
     public static boolean compareFace(String imageURLA, String imageURLB) {
-        DefaultProfile profile = DefaultProfile.getProfile("cn-shanghai", "LTAI5tDAAQ9SVwoeAEafYNmy", "p9OBKcgaj3PX6uD60NTlvOblnNNv6V");
+        DefaultProfile profile = DefaultProfile.getProfile("cn-shanghai", "", "");
         IAcsClient client = new DefaultAcsClient(profile);
         CompareFaceRequest request = new CompareFaceRequest();
 
@@ -42,6 +41,7 @@ public class CompareFace {
         try {
             CompareFaceResponse response = client.getAcsResponse(request);
             double confidence = response.getData().getConfidence();
+//            人脸对比 合格数值
             if (confidence >= 60) {
                 compareFace.setResults(true);
             } else {
