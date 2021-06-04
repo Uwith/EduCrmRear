@@ -136,4 +136,14 @@ public class StudentController extends BladeController {
 		return R.data(studentService.list());
 	}
 
+	/**
+	 * 人脸识别
+	 */
+	@PostMapping("/compareFace")
+	@ApiOperationSupport(order = 9)
+	@ApiOperation(value = "人脸识别")
+	public R compareFace(@ApiParam(value = "人脸比对") @RequestParam String ImageURLA,String ImageURLB) {
+		return R.status(studentService.compareFace(ImageURLA,ImageURLB));
+	}
+
 }

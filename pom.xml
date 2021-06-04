@@ -169,6 +169,75 @@
             <artifactId>springfox-swagger2</artifactId>
             <version>2.10.5</version>
         </dependency>
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-core</artifactId>
+            <version>4.5.14</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.74</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-facebody</artifactId>
+            <version>1.2.13</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>facebody20191230</artifactId>
+            <version>1.0.12</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-imageaudit</artifactId>
+            <version>1.0.8</version>
+        </dependency>
+        <!--        -->
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>tea</artifactId>
+            <version>[1.0.5, 2.0.0)</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>tea-util</artifactId>
+            <version>0.2.12</version>
+        </dependency>
+        <!--        安装Tea-console-->
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>tea-console</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
+        <!--        安装容器服务SDK-->
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>cs20151215</artifactId>
+            <version>[2.4.1,)</version>
+        </dependency>
+
+        <!--        安装阿里oss-->
+        <dependency>
+            <groupId>com.aliyun.oss</groupId>
+            <artifactId>aliyun-sdk-oss</artifactId>
+            <version>3.10.2</version>
+        </dependency>
+        <!--        安装darabonba-string-->
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>darabonba-string</artifactId>
+            <version>0.0.3</version>
+        </dependency>
+
+        <!--        安装darabonba-env-->
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>darabonba-env</artifactId>
+            <version>0.1.1</version>
+        </dependency>
     </dependencies>
 
     <build>
