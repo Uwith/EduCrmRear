@@ -38,5 +38,5 @@ public interface IStudentService extends BaseService<Student> {
 	 */
 	IPage<StudentVO> selectStudentPage(IPage<StudentVO> page, StudentVO student);
 
-	boolean compareFace(String imageURLA, String imageURLB);
+	boolean compareFace(String[] args_);
 }

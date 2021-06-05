@@ -16,11 +16,14 @@
  */
 package org.springblade.basic.service.impl;
 
+import com.aliyun.facebody20191230.Client;
+import com.aliyun.teaopenapi.models.Config;
 import org.springblade.basic.entity.Student;
 import org.springblade.basic.vo.StudentVO;
 import org.springblade.basic.mapper.StudentMapper;
 import org.springblade.basic.service.IStudentService;
 import org.springblade.common.utils.CompareFace;
+import org.springblade.common.utils.Sample;
 import org.springblade.core.mp.base.BaseServiceImpl;
 import org.springframework.stereotype.Service;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -34,13 +37,15 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 @Service
 public class StudentServiceImpl extends BaseServiceImpl<StudentMapper, Student> implements IStudentService {
 
-	@Override
-	public IPage<StudentVO> selectStudentPage(IPage<StudentVO> page, StudentVO student) {
-		return page.setRecords(baseMapper.selectStudentPage(page, student));
-	}
+    @Override
+    public IPage<StudentVO> selectStudentPage(IPage<StudentVO> page, StudentVO student) {
+        return page.setRecords(baseMapper.selectStudentPage(page, student));
+    }
 
-	public boolean compareFace(String imageURLA, String imageURLB){
-		return CompareFace.compareFace(imageURLA,imageURLB);
-	}
+    @Override
+    public boolean compareFace(String[] args_) {
+
+        return false;
+    }
 
 }
