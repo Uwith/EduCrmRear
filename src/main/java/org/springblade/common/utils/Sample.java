@@ -1,15 +1,10 @@
-package org.springblade.common.utils;
 // This file is auto-generated, don't edit it. Thanks.
+package org.springblade.common.utils;
 
-import com.aliyun.tea.*;
-import com.aliyun.teaconsole.*;
-import com.aliyun.teautil.*;
-import com.aliyun.darabonba.env.*;
-import com.aliyun.darabonbastring.*;
-import com.aliyun.teaopenapi.*;
-import com.aliyun.teaopenapi.models.*;
-import com.aliyun.facebody20191230.*;
 import com.aliyun.facebody20191230.models.*;
+import com.aliyun.tea.TeaException;
+import com.aliyun.tea.TeaModel;
+import com.aliyun.teaopenapi.models.Config;
 
 public class Sample {
 
@@ -161,13 +156,6 @@ public class Sample {
         java.util.List<String> faceUrlArr = com.aliyun.darabonbastring.Client.split(args.get(1), ",", 10);
         String testImgUrl = args.get(2);
         String testCompareImgUrl = args.get(3);
-//        EnvAssignment Env赋值
-//        try {
-//            com.aliyun.darabonba.env.EnvClient.setEnv("ACCESS_KEY_ID", "LTAI5tDAAQ9SVwoeAEafYNmy");
-//            com.aliyun.darabonba.env.EnvClient.setEnv("ACCESS_KEY_SECRET", "p9OBKcgaj3PX6uD60NTlvOblnNNv6V");
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
         // 获取人脸数据库Client
         com.aliyun.facebody20191230.Client client = Sample.createClient(regionId);
         // 创建人脸数据库
